@@ -26,12 +26,12 @@ const ReportDetails = ({ route, navigation }) => {
       <View style={styles.body}>
         <View>
           <View style={styles.item}>
-            <Text>Patient name : </Text>
-            <Text>Age : </Text>
-            <Text>Gender : </Text>
-            <Text>Ref no : </Text>
-            <Text>Referred by : </Text>
-            <Text>Reported Date and Time :</Text>
+            <Text>Patient name : Chathu</Text>
+            <Text>Age : 58</Text>
+            <Text>Gender : Female </Text>
+            <Text>Ref no : 75757</Text>
+            <Text>Referred by : Kamal Gunasiri</Text>
+            <Text>Reported Date and Time : 2023/01/01 5.30 a.m</Text>
           </View>
         </View>
       </View>

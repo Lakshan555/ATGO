@@ -18,46 +18,40 @@ import { AntDesign } from "@expo/vector-icons";
 const DATA = [
   {
     id: 1,
-    title: "ESR",
-    rName: "ESR",
+    title: "Malith",
+    age: "57",
     date: "2023/01/10",
-    data: ["Ticket No:#50001"],
+    
   },
   {
     id: 2,
-    title: "CRP",
-    rName: "CRP",
+    title: "Kosala",
+    age: "57",
     date: "2023/01/10",
-    data: ["Ticket No:#50001"],
+    
   },
   {
     id: 3,
-    title: "X-Ray",
-    rName: "ESR",
+    title: "Chathu",
+    age: "80",
     date: "2023/01/10",
-    data: ["Ticket No:#50001"],
+    
   },
   {
     id: 4,
-    title: "FBS",
-    rName: "ESR",
+    title: "Lakimi",
+    age: "20",
     date: "2023/01/10",
-    data: ["Ticket No:#50001"],
+    
   },
   {
     id: 5,
-    title: "FBC",
-    rName: "ESR",
+    title: "Wasundara",
+    age: "90",
     date: "2023/01/10",
-    data: ["Ticket No:#50001"],
+    
   },
-  {
-    id: 5,
-    title: "FBC",
-    rName: "ESR",
-    date: "2023/01/10",
-    data: ["Ticket No:#50001"],
-  },
+  
 ];
 
 const Prescription = ({ navigation }) => {
@@ -92,7 +86,7 @@ const Prescription = ({ navigation }) => {
             <>
               {/* <AntDesign name="addvideo" size={30} color="black" /> */}
               <AntDesign name="addfile" size={24} color="black" />
-              <Text>Add Report</Text>
+              <Text>Add Prescription</Text>
             </>
           ) : (
             <Image source={{ uri: image }} style={styles.defaultImage} />
@@ -106,9 +100,9 @@ const Prescription = ({ navigation }) => {
           return (
             <View style={styles.item}>
               <View>
-                <Text style={styles.title}>{item.title}</Text>
-                <Text>{item.date}</Text>
-                <Text>Reference No {item.id}</Text>
+                <Text style={styles.title}>Patient name : {item.title}</Text>
+                <Text>Age : {item.age}</Text>
+                <Text>Date {item.date}</Text>
               </View>
 
               <TouchableOpacity
@@ -120,7 +114,7 @@ const Prescription = ({ navigation }) => {
                   borderRadius: 10,
                 }}
               >
-                <Text style={styles.touchableTextStyle}>Report</Text>
+                <Text style={styles.touchableTextStyle}>Prescription</Text>
               </TouchableOpacity>
             </View>
           );

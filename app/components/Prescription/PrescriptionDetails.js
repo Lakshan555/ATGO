@@ -23,12 +23,12 @@ const PrescriptionDetails = ({ route, navigation }) => {
       <View style={styles.body}>
         <View>
           <View style={styles.item}>
-            <Text>Patient name : </Text>
-            <Text>Age : </Text>
-            <Text>Gender : </Text>
-            <Text>Ref no : </Text>
-            <Text>Referred by : </Text>
-            <Text>Reported Date and Time :</Text>
+            <Text>Patient name :Shanthi</Text>
+            <Text>Drug : Panadol</Text>
+            <Text>Dose  :  </Text>
+            <Text>Frequency : 1</Text>
+            <Text>Duration  : 1-2 </Text>
+            <Text>Quantity :2</Text>
           </View>
         </View>
       </View>

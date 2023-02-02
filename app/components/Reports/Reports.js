@@ -109,7 +109,7 @@ const Reports = ({ navigation }) => {
             <View style={styles.item}>
               <View>
                 <Text style={styles.title}>{item.title}</Text>
-                <Text>{item.date}</Text>
+                <Text>Date {item.date}</Text>
                 <Text>Reference No {item.id}</Text>
               </View>
 
