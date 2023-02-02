@@ -8,6 +8,7 @@ import NewPrescription from "../components/policeOfficer/NewPrescription";
 import PastPrescription from "../components/policeOfficer/PastPrescription";
 import MedicalAssistance from "../components/policeOfficer/MedicalAssistance";
 import AboutMe from "../components/policeOfficer/AboutMe";
+import AddDrugs from "../components/policeOfficer/AddDrugs";
 
 //invoke navigation function. it will return a component
 const Tab = createBottomTabNavigator();
@@ -22,8 +23,8 @@ const TabNavigatorPolice = () => {
         component={NewPrescription}
         options={{
           title: "New Prescription",
-          headerTintColor: "white",
-          headerStyle: { backgroundColor: "#bcbcbc" },
+          headerTintColor: "black",
+          headerStyle: { backgroundColor: "#fff" },
         }}
       />
       <Stack.Screen
@@ -31,8 +32,8 @@ const TabNavigatorPolice = () => {
         component={PastPrescription}
         options={{
           title: "Past Prescription",
-          headerTintColor: "white",
-          headerStyle: { backgroundColor: "#bcbcbc" },
+          headerTintColor: "black",
+          headerStyle: { backgroundColor: "#fff" },
         }}
       />
       <Stack.Screen
@@ -40,8 +41,8 @@ const TabNavigatorPolice = () => {
         component={MedicalAssistance}
         options={{
           title: "Medical Assistance",
-          headerTintColor: "white",
-          headerStyle: { backgroundColor: "#bcbcbc" },
+          headerTintColor: "black",
+          headerStyle: { backgroundColor: "#fff" },
         }}
       />
       <Stack.Screen
@@ -49,8 +50,17 @@ const TabNavigatorPolice = () => {
         component={AboutMe}
         options={{
           title: "About Me",
-          headerTintColor: "white",
-          headerStyle: { backgroundColor: "#bcbcbc" },
+          headerTintColor: "black",
+          headerStyle: { backgroundColor: "#fff" },
+        }}
+      />
+      <Stack.Screen
+        name="AddDrug"
+        component={AddDrugs}
+        options={{
+          title: "Add Drug",
+          headerTintColor: "black",
+          headerStyle: { backgroundColor: "#fff" },
         }}
       />
     </Stack.Navigator>
