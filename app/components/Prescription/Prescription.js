@@ -65,9 +65,7 @@ const Prescription = ({ navigation }) => {
   const [image, setImage] = useState(null);
 
   const handleReportViolation = (id) => {
-    navigation.navigate("reportDetails", {
-      fineId: id,
-    });
+    navigation.navigate("prescriptionDetails");
   };
 
   console.log(fines.fines);
@@ -127,7 +125,6 @@ const Prescription = ({ navigation }) => {
             </View>
           );
         }}
-      
       />
     </SafeAreaView>
   );

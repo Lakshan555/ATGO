@@ -8,7 +8,8 @@ import HomeNavigation from "./HomeNavigation";
 import TaxiRideNavigation from "./TaxiRideNavigation";
 import MoreOptinsNavigation from "./MoreOptinsNavigation";
 import Reports from "../components/Reports/Reports";
-import Prescription from "../components/Reports copy/Prescription";
+import Prescription from "../components/Prescription/Prescription";
+import SuggestLocation from "../components/SuggestLocation/SuggestLocation";
 
 //invoke navigation function. it will return a component
 const Tab = createBottomTabNavigator();
@@ -18,7 +19,7 @@ const TabNavigator = () => {
     <Tab.Navigator tabBar={(props) => <TabBar {...props} />}>
       <Tab.Screen
         name="Home"
-        component={HomeNavigation}
+        component={SuggestLocation}
         initialParams={{ icon: "home" }}
         options={{ headerShown: false }}
       />
@@ -31,7 +32,7 @@ const TabNavigator = () => {
       <Tab.Screen
         name="Prescription"
         component={Prescription}
-        options={{ headerShown: false }}
+    
         initialParams={{ tabIcon: "prescription" }}
       />
       {/* <Tab.Screen

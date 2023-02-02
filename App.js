@@ -12,6 +12,7 @@ import AccountTypeSelection from "./app/components/AccountTypeSelection";
 import PoliceOfficerLogin from "./app/components/PoliceOfficerLogin";
 import TabNavigatorPolice from "./app/navigation/TabNavigatorPolice";
 import ReportDetails from "./app/components/Reports/ReportDetails";
+import PrescriptionDetails from "./app/components/Prescription/PrescriptionDetails";
 
 const MyStack = () => {
   return (
@@ -56,7 +57,11 @@ const MyStack = () => {
         name="reportDetails"
         component={ReportDetails}
       />
-    
+      <Stack.Screen
+        options={{ headerShown: false }}
+        name="prescriptionDetails"
+        component={PrescriptionDetails}
+      />
     </Stack.Navigator>
   );
 };

@@ -21,7 +21,7 @@ import { Entypo } from "@expo/vector-icons";
 const ReportDetails = ({ route, navigation }) => {
   return (
     <View style={styles.screen}>
-      <Header />
+      <Header prop1={"Report"}/>
 
       <View style={styles.body}>
         <View>

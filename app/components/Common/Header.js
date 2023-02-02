@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
 import Constants from "expo-constants";
 
-const Header = () => {
+const Header = ({prop1, prop2 }) => {
+
   return (
     <View style={styles.header}>
-       <Text style={styles.textStyleHeaderType}>Report Violation</Text>
+      <Text style={styles.textStyleHeaderType}>{prop1}</Text>
     </View>
   );
 };
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingTop: Constants.statusBarHeight,
     justifyContent: "center",
-  
+
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
     zIndex: 5,
   },
   textStyleHeaderType: {
-    padding:15,
+    padding: 15,
     fontSize: 18,
     fontWeight: "900",
   },

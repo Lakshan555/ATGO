@@ -12,4 +12,4 @@ const HomeNavigation = () => {
 
 export default HomeNavigation;
 
-const styles = StyleSheet.create({});
+

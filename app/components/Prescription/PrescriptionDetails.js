@@ -15,9 +15,10 @@ import {
 import Header from "../Common/Header";
 
 const PrescriptionDetails = ({ route, navigation }) => {
+  const test = "ssss";
   return (
     <View style={styles.screen}>
-      <Header />
+      <Header  prop1={"Prescription"} />
 
       <View style={styles.body}>
         <View>
