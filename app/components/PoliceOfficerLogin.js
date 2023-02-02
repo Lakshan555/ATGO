@@ -14,7 +14,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const { height, width } = Dimensions.get("window");
 
-const PoliceOfficerLogin = ({ navigation, route }) => {
+const DoctorLogin = ({ navigation, route }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -27,7 +27,7 @@ const PoliceOfficerLogin = ({ navigation, route }) => {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.textStyleHeader}>Sign in as a</Text>
-      <Text style={styles.textStyleHeaderType}>Police Officer</Text>
+      <Text style={styles.textStyleHeaderType}>Doctor</Text>
       <View style={styles.textInputContainer}>
         <View style={styles.inputboxCon}>
           <View style={styles.labelCon}>
@@ -66,14 +66,14 @@ const PoliceOfficerLogin = ({ navigation, route }) => {
         </TouchableOpacity>
 
         <Text style={styles.needAcctxt}>
-          If you are facing an issue in loging please contact relevent OIC
+          If you are facing an issue in loging please contact relevent Admin
         </Text>
       </View>
     </SafeAreaView>
   );
 };
 
-export default PoliceOfficerLogin;
+export default DoctorLogin;
 
 const styles = StyleSheet.create({
   container: {

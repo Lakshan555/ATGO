@@ -5,7 +5,6 @@ import Profile from "../components/Profile";
 import TabBar from "../components/TabBar";
 import ProfileNavigation from "./ProfileNavigation";
 import HomeNavigation from "./HomeNavigation";
-import TaxiRideNavigation from "./TaxiRideNavigation";
 import MoreOptinsNavigation from "./MoreOptinsNavigation";
 import Reports from "../components/Reports/Reports";
 import Prescription from "../components/Prescription/Prescription";
@@ -35,17 +34,6 @@ const TabNavigator = () => {
     
         initialParams={{ tabIcon: "prescription" }}
       />
-      {/* <Tab.Screen
-        name="Alerts"
-        component={ProfileNavigation}
-        initialParams={{ icon: "exclamationcircle" }}
-      /> */}
-      {/* <Tab.Screen
-        options={{ headerShown: false }}
-        name="More"
-        component={MoreOptinsNavigation}
-        initialParams={{ icon: "database" }}
-      /> */}
     </Tab.Navigator>
   );
 };
